@@ -1,0 +1,39 @@
+{% extends "bookmaker_ratio/main.html" %}
+
+
+      {% block content %}
+
+      <table class="table table-dark table-striped">
+        <tr>
+            <td>
+                Название Букмекера
+            </td>
+            <td>
+                Логотип
+            </td>
+            <td>
+                Бонусная программа
+            </td>
+            <td>
+                Рейтинг
+            </td>
+        </tr>
+        {% for bm in bookmakers %}
+        <tr>
+            <td style="display: flexbox; margin: 1rem;">
+              <b style="margin-left: 1rem; margin-top: 1rem;">{{ bm.name }}</b>  
+            </td>
+            <td>
+                <a href="{{bm.url}}"><img src="http://127.0.0.1/{{ bm.image}}" alt="" width="300" height="150"></a>
+            </td>
+            <td>
+                {{ bm.bonus }}
+            </td>
+            <td>
+                {{ bm.ratio }} &#11088;
+            </td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      {% endblock %}
