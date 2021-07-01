@@ -7,7 +7,7 @@ class Bookmaker(models.Model):
     def get_file_path(self, filename):
         extension = filename.split('.')[-1]
         filename = "%s.%s" % (uuid.uuid4(), extension)
-        return os.path.join("/var/www/booker", filename)
+        return os.path.join("static/images", filename)
 
     name = models.CharField('Name', max_length=255, default=None)
     bonus = models.TextField('Bonus', default=None, blank=True, null=True)
