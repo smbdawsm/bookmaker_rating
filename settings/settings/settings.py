@@ -25,7 +25,7 @@ SECRET_KEY = '2_7m&okofjq&2)&nzxt&!^7961e11c37-y2ty4*d-q9!6u)b8o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['194.67.110.28', 'bukbonus.info']
 
 
 # Application definition
