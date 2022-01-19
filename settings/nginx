@@ -16,6 +16,6 @@ server {
 
     location /static/ {
         autoindex on;
-        alias /home/smbdawsm/projects/bookmaker_rating/settings/static/;
+        alias /var/wwww/bookmaker_rating/settings/static;
     }
 }

@@ -1,1 +1,5 @@
-/venv
+/venv*
+/static*
+/settings/bookmaker_ratio/__pycache__*
+*/*/__pycache__*
+*/*/*/__pycache__*
